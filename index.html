@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P Ticket</title>
+  <!-- custom css  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- daisy UI and tailwind CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="raleway">
+
+  <header class="container mx-auto mt-12 ">
+    <nav>
+      <div class="navbar ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class=" text-lg lg:text-3xl font-extrabold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="bg-[#1dd1001a] py-4 px-7 border-[1px]  border-[#1dd10066] flex justify-center items-center gap-2 text-[#1dd132] font-extrabold rounded-xl  ">Bus
+            <img src="images/bus-icon.png" alt=""> </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="">
+    <section class="container mx-auto mt-12 max-w-6x lg:relative">
+      <div class="hero h-[550px]  bg-[url('images/banner.png')] rounded-3xl">
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-[80%]">
+            <h1 class=" text-2xl lg:text-5xl text-white font-extrabold">End-to-End Travel with <br> <span class="text-[#1dd132]"> P
+                Paribahan</span></h1>
+            <p class="my-3">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn bg-[#1dd132] text-black font-extrabold   mb-24">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ovverride div -->
+      <div class="flex flex-col lg:flex-row gap-12 lg:mx-auto lg:w-[80%] lg:absolute -bottom-12 left-28">
+        <!-- 1st div -->
+        <div class="border-b-green-500 border-[3px] rounded-3xl bg-white mt-10 lg:mt-0">
+          <div class="flex gap-3 lg:p-5 p-10 justify-center">
+            <div>
+              <img class="w-full" src="images/people.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold">500k+</h3>
+              <p class="text-sm opacity-90">Registered users</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- 2nd div -->
+
+
+        <div class="border-b-green-500 border-[3px] rounded-3xl bg-white">
+          <div class="flex gap-3 lg:p-5 p-10 justify-center ">
+            <div>
+              <img class="w-full" src="images/ticket-cupon.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold">1.7 lacks</h3>
+              <p class="text-sm opacity-90">Tickets sold</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- 3rd div -->
+
+        <div class="border-b-green-500 border-[3px] rounded-3xl bg-white">
+          <div class="flex gap-3  lg:p-5 p-10 justify-center">
+            <div>
+              <img class="w-full" src="images/stoppage.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold">80K+</h3>
+              <p class="text-sm opacity-90">Rental partners</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
