@@ -14,7 +14,6 @@
 </head>
 
 <body class="raleway">
-
   <header class="container mx-auto mt-12 ">
     <nav>
       <div class="navbar ">
@@ -65,14 +64,14 @@
                 Paribahan</span></h1>
             <p class="my-3">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
               quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn bg-[#1dd132] text-black font-extrabold   mb-24">Buy Tickets</button>
+            <button class="btn bg-[#1dd132] text-black font-extrabold   mb-24" onclick="window.location.href='#ticketCenter'">Buy Tickets</button>
           </div>
         </div>
       </div>
 
 
       <!-- ovverride div -->
-      <div class="flex flex-col lg:flex-row gap-12 lg:mx-auto lg:w-[80%] lg:absolute -bottom-12 left-28">
+      <div class="flex flex-col lg:flex-row gap-12 lg:mx-auto lg:w-[80%] lg:absolute lg:translate-x-1/3 lg:-translate-y-2/3">
         <!-- 1st div -->
         <div class="border-b-green-500 border-[3px] rounded-3xl bg-white mt-10 lg:mt-0">
           <div class="flex gap-3 lg:p-5 p-10 justify-center">
@@ -136,7 +135,7 @@
           </div>
           <img src="images/info-devider.png" alt="">
           <!-- coupon code -->
-          <div class="lg:py-16 py-11">
+          <div class="lg:py-16 py-11 mx-auto">
             <h2 class="font-bold lg:text-2xl">NEW15</h2>
             <p>Coupon Code</p>
 
@@ -155,8 +154,8 @@
           </div>
           <img src="images/info-devider.png" alt="">
           <!-- coupon code -->
-          <div class="lg:py-16 py-11">
-            <h2 class="font-bold lg:text-2xl">Couple 20</h2>
+          <div class="lg:py-16 py-11 mx-auto">
+            <h2 class="font-bold lg:text-2xl">Couple20</h2>
             <p>Coupon Code</p>
 
           </div>
@@ -211,7 +210,7 @@
               <div class="flex justify-center my-7">
 
                 <button
-                  class="bg-[#1dd1001a] py-4 px-7 border-[1px]  border-[#1dd10066] flex justify-center items-center gap-2 text-[#1dd132] font-extrabold rounded-xl  "><img
+                  class="bg-[#1dd1001a] py-4 px-7 border-[1px]  border-[#1dd10066] flex justify-center items-center gap-2 text-[#1dd132] font-extrabold rounded-xl quantityBtn" ><img
                     src="images/seat-green.png" alt=""> 40 Seats left
                 </button>
               </div>
@@ -281,7 +280,7 @@
 
 
       <!-- select sit section -->
-      <div class="container mx-auto mt-5 bg-white rounded-lg p-7">
+      <div class="container mx-auto mt-5 bg-white rounded-lg p-7" id="ticketCenter">
         <div class="grid grid-cols-1 lg:grid-cols-12 ">
 
           <!-- --------------  -->
@@ -297,7 +296,7 @@
               </div>
               <!-- ---------------------  -->
 
-              <button class="  flex pr-4  gap-2 text-[#1dd132] font-extrabold rounded-xl  "><img
+              <button class="  flex pr-4  gap-2 text-[#1dd132] font-extrabold rounded-xl  quantityBtn"><img
                   src="images/seat-green-filled.png" alt=""> 40 Seats left
               </button>
 
@@ -311,41 +310,41 @@
 
             <div id="calender" class=" grid grid-cols-2 gap-5 mt-6">
               <div class="grid grid-cols-2 gap-5 items-center  text-center mr-5">
-                <button class="btn px-3">A1</button>
-                <button class="btn px-3">A2</button>
-                <button class="btn px-3">B1</button>
-                <button class="btn px-3">B2</button>
-                <button class="btn px-3">C1</button>
-                <button class="btn px-3">C2</button>
-                <button class="btn px-3">D1</button>
-                <button class="btn px-3">D2</button>
-                <button class="btn px-3">E1</button>
-                <button class="btn px-3">E2</button>
-                <button class="btn px-3">F1</button>
-                <button class="btn px-3">F2</button>
-                <button class="btn px-3">G1</button>
-                <button class="btn px-3">G2</button>
-                <button class="btn px-3">H1</button>
-                <button class="btn px-3">H2</button>
+                <button class="btn px-3" id="a1" onclick="updateSelectedList(event)">A1</button>
+                <button class="btn px-3" id="a2" onclick="updateSelectedList(event)">A2</button>
+                <button class="btn px-3" id="b1" onclick="updateSelectedList(event)">B1</button>
+                <button class="btn px-3" id="b2" onclick="updateSelectedList(event)">B2</button>
+                <button class="btn px-3" id="c1" onclick="updateSelectedList(event)">C1</button>
+                <button class="btn px-3" id="c2" onclick="updateSelectedList(event)">C2</button>
+                <button class="btn px-3" id="d1" onclick="updateSelectedList(event)">D1</button>
+                <button class="btn px-3" id="d2" onclick="updateSelectedList(event)">D2</button>
+                <button class="btn px-3" id="e1" onclick="updateSelectedList(event)">E1</button>
+                <button class="btn px-3" id="e2" onclick="updateSelectedList(event)">E2</button>
+                <button class="btn px-3" id="f1" onclick="updateSelectedList(event)">F1</button>
+                <button class="btn px-3" id="f2" onclick="updateSelectedList(event)">F2</button>
+                <button class="btn px-3" id="g1" onclick="updateSelectedList(event)">G1</button>
+                <button class="btn px-3" id="g2" onclick="updateSelectedList(event)">G2</button>
+                <button class="btn px-3" id="h1" onclick="updateSelectedList(event)">H1</button>
+                <button class="btn px-3" id="h2" onclick="updateSelectedList(event)">H2</button>
               </div>
 
               <div class="grid grid-cols-2 items-center text-center gap-5 ml-5">
-                <button class="btn px-3">A3</button>
-                <button class="btn px-3">A4</button>
-                <button class="btn px-3">B3</button>
-                <button class="btn px-3">B4</button>
-                <button class="btn px-3">C3</button>
-                <button class="btn px-3">C4</button>
-                <button class="btn px-3">D3</button>
-                <button class="btn px-3">D4</button>
-                <button class="btn px-3">E3</button>
-                <button class="btn px-3">E4</button>
-                <button class="btn px-3">F3</button>
-                <button class="btn px-3">F4</button>
-                <button class="btn px-3">G3</button>
-                <button class="btn px-3">G4</button>
-                <button class="btn px-3">H3</button>
-                <button class="btn px-3">H4</button>
+                <button class="btn px-3" id="a3" onclick="updateSelectedList(event)">A3</button>
+                <button class="btn px-3" id="a4" onclick="updateSelectedList(event)">A4</button>
+                <button class="btn px-3" id="b3" onclick="updateSelectedList(event)">B3</button>
+                <button class="btn px-3" id="b4" onclick="updateSelectedList(event)">B4</button>
+                <button class="btn px-3" id="c3" onclick="updateSelectedList(event)">C3</button>
+                <button class="btn px-3" id="c4" onclick="updateSelectedList(event)">C4</button>
+                <button class="btn px-3" id="d3" onclick="updateSelectedList(event)">D3</button>
+                <button class="btn px-3" id="d4" onclick="updateSelectedList(event)">D4</button>
+                <button class="btn px-3" id="e3" onclick="updateSelectedList(event)">E3</button>
+                <button class="btn px-3" id="e4" onclick="updateSelectedList(event)">E4</button>
+                <button class="btn px-3" id="f3" onclick="updateSelectedList(event)">F3</button>
+                <button class="btn px-3" id="f4" onclick="updateSelectedList(event)">F4</button>
+                <button class="btn px-3" id="g3" onclick="updateSelectedList(event)">G3</button>
+                <button class="btn px-3" id="g4" onclick="updateSelectedList(event)">G4</button>
+                <button class="btn px-3" id="h3" onclick="updateSelectedList(event)">H3</button>
+                <button class="btn px-3" id="h4" onclick="updateSelectedList(event)">H4</button>
 
               </div>
             </div>
@@ -367,37 +366,28 @@
                <div class="flex justify-around  borderBottom">
                    <div class="flex items-center">
                     <h3>Seat</h3>
-                    <sup class=" text-white rounded-lg p-2 bg-[#1DD100] ">2</sup>
+                    <sup class=" text-white rounded-lg p-2 bg-[#1DD100] " id="bookedSeatNum">2</sup>
 
                    </div>
                    <h3> Class</h3>
                    <h3> Price</h3>
                </div>
-
-               <div class="flex justify-around  mt-5">
-                  <h3 class="uppercase">C2</h3>
-                  <h3>Economoy</h3>
-                  <h3 class="uppercase">550</h3>
-               </div>
-
-               <div class="flex justify-around  mt-3">
-                  <h3 class="uppercase">C2</h3>
-                  <h3>Economoy</h3>
-                  <h3 class="uppercase">550</h3>
+               <div id="ticketDetails">
                </div>
                <hr class="mt-3">
 
-               <div class="flex justify-between px-7 mt-4 text-black font-extrabold">
+               <div id="pricingArea">
+                <div class="flex justify-between px-7 mt-4 text-black font-extrabold">
                   <h3>Total Price</h3>
-                  <h3>BDT 1100</h3>
+                  <h3 id="totalPrice">BDT 0</h3>
+               </div>
                </div>
 
-
                <!-- input field  -->
-              <div class=" p-7 ">
+              <div class=" p-7 " id="couponBox">
                 <label class="input justify-between flex items-center gap-2">
-                  <input type="text" class="text-[#9B9DA1]" placeholder="Have any copupon?" />
-                  <span class=" bg-[#1DD100] text-white py-3 px-4 rounded-lg">Apply</span>
+                  <input type="text" class="text-[#9B9DA1]" placeholder="Have any coupon?" id="couponValue" disabled/>
+                  <span class=" bg-[#1DD100] text-white py-3 px-4 rounded-lg" id="applyCoupon">Apply</span>
                 </label>
                </div>
 
@@ -405,7 +395,7 @@
                <!-- grand Total  -->
                <div class="flex justify-between p-7 font-extrabold">
                   <h3>Grand Total</h3>
-                  <h3>BDT 1100</h3>
+                  <h3 id="grandTotal">BDT 0</h3>
                </div>
 
                <!-- newsletter section  -->
@@ -414,21 +404,21 @@
                         <div class=" font-extrabold"> 
                         <label for="">Passenger Name*</label>
                       </div>
-                        <input class="input input-bordered w-full mt-2" type="text" placeholder="Enter your name">
+                        <input class="input input-bordered w-full mt-2" type="text" placeholder="Enter your name" id="passengerName">
                          
                         <div class="font-extrabold my-2">
                           <label for="">Phone Number*</label>
                         </div>
-                        <input class="input input-bordered w-full " type="number" placeholder="Enter your phone number">
+                        <input class="input input-bordered w-full " type="number" placeholder="Enter your phone number" id="phone">
 
                        <div class="font-extrabold mt-2"> 
                         <label for="">Email ID</label>
                       </div>
-                        <input class="input input-bordered w-full mt-2" type="email" required placeholder="Enter your email id">
+                        <input class="input input-bordered w-full mt-2" type="email" required placeholder="Enter your email id" id="email">
                       </div>
 
                       <div class="p-5 font-bold mx-auto text-white rounded-lg bg-[#1DD100] text-center">
-                        <button onclick="my_modal_1.showModal()">Next</button>
+                        <button onclick="my_modal_1.showModal()" id="nextBtn">Next</button>
                       </div>
 
 
@@ -502,9 +492,9 @@
   <footer class="footer text-white bg-black  py-4 border-t">
     <aside class="items-center grid-flow-col ">
      
-      <p class="lg:px-24 py-10">@all rights reserved, P-Ticket services limited.2024</p>
+      <p class="lg:px-24 px-12 py-10">@all rights reserved, P-Ticket services limited.2024</p>
     </aside> 
-    <nav class="md:place-self-center lg:px-24 py-10 md:justify-self-end">
+    <nav class="md:place-self-center lg:px-24 px-12 pb-12 lg:pb-0 md:justify-self-end">
       <div class="grid grid-flow-col gap-4">
         <h3>Terms & condition</h3>
         <h3>Return & refund policy</h3>
@@ -513,7 +503,7 @@
       </div>
     </nav>
   </footer>
-
 </body>
-
+<script src="functions.js"></script>
+<script src="index.js"></script>
 </html>
